@@ -21,6 +21,9 @@
             .preloader {
                 display: none;
             }
+            .show-preloader {
+                overflow: visible;
+            }
             .top-header {
                 background-color: var(--header-color);
                 box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
@@ -36,7 +39,7 @@
     </noscript>
     <title>Bem-vindo ao meu Portfólio - Alisson Silva</title>
 </head>
-<body>
+<body class="show-preloader">
     <div class="preloader flex-row flex-jc flex-ac">
         <img src="assets/img/preloader.svg" alt="ilustração pacman comendo bolinhas">
     </div>
@@ -174,83 +177,27 @@
                 <h2 class="js-animated c-red text-shadow text-center anm anm-fade-in">Projetos</h2>
                 <div class="projects__list flex-row flex-row--wrap flex-jc slide-up appear">
                     <div class="js-animated projects__card anm anm-slide-up anm-fade-in">
-                        <img loading="lazy" src="assets/img/page-test.jpeg" alt="Print da página inicial do projeto">
+                        <img src="assets/img/dark-mode-project.jpg" alt="Imagem da página inicial do projeto">
                         <div class="projects__card-title flex-col flex-ac">
-                            <h3>Nome do projeto</h3>
+                            <h3>Dark Mode</h3>
                             <svg><use href="#arrow-icon"></use></svg>
                         </div>
                         <div class="projects__card-description">
-                            <h4>Nome do projeto</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Necessitatibus consequatur ipsum dolore delectus soluta hic 
-                                eum animi repudiandae enim, dicta ea, alias autem non 
-                                exercitationem deleniti reprehenderit?</p>
+                            <h4>Dark Mode</h4>
+                            <p>Projeto realizado para aplicar mudança de tema, entre 
+                                claro e escuro, e salvar a opção escolhida utilizando local storage, 
+                                atualizando automaticamente o tema conforme a preferência do usuário 
+                                quando a página for carregada</p>
                             <small class="projects__card-tech flex-row flex-ac">
                                 <svg><use href="#list-icon"></use></svg>
-                                HTML5, CSS3
+                                HTML5, CSS3, JavaScript
                             </small>
                             <div class="projects__card-links flex-row flex-jc">
-                                <a class="flex-row flex-ac" href="#">
+                                <a class="flex-row flex-ac" href="https://github.com/AlissonS47/dark-mode" target=”_blank”>
                                     <svg><use href="#code-icon"></use></svg>
                                     Código
                                 </a>
-                                <a class="flex-row flex-ac" href="#">
-                                    <svg><use href="#link-icon"></use></svg>
-                                    Demo
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="js-animated projects__card anm anm-slide-up anm-fade-in">
-                        <img src="assets/img/page-test.jpeg" alt="">
-                        <div class="projects__card-title flex-col flex-ac">
-                            <h3>Nome do projeto</h3>
-                            <svg><use href="#arrow-icon"></use></svg>
-                        </div>
-                        <div class="projects__card-description">
-                            <h4>Nome do projeto</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Necessitatibus consequatur ipsum dolore delectus soluta hic 
-                                eum animi repudiandae enim, dicta ea, alias autem non 
-                                exercitationem deleniti reprehenderit?</p>
-                                <small class="projects__card-tech flex-row flex-ac">
-                                    <svg><use href="#list-icon"></use></svg>
-                                    HTML5, CSS3
-                                </small>
-                                <div class="projects__card-links flex-row flex-jc">
-                                <a class="flex-row flex-ac" href="#">
-                                    <svg><use href="#code-icon"></use></svg>
-                                    Código
-                                </a>
-                                <a class="flex-row flex-ac" href="#">
-                                    <svg><use href="#link-icon"></use></svg>
-                                    Demo
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="js-animated projects__card anm anm-slide-up anm-fade-in">
-                        <img src="assets/img/page-test.jpeg" alt="">
-                        <div class="projects__card-title flex-col flex-ac">
-                            <h3>Nome do projeto</h3>
-                            <svg><use href="#arrow-icon"></use></svg>
-                        </div>
-                        <div class="projects__card-description">
-                            <h4>Nome do projeto</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Necessitatibus consequatur ipsum dolore delectus soluta hic 
-                                eum animi repudiandae enim, dicta ea, alias autem non 
-                                exercitationem deleniti reprehenderit?</p>
-                                <small class="projects__card-tech flex-row flex-ac">
-                                    <svg><use href="#list-icon"></use></svg>
-                                    HTML5, CSS3
-                                </small>
-                            <div class="projects__card-links flex-row flex-jc">
-                                <a class="flex-row flex-ac" href="#">
-                                    <svg><use href="#code-icon"></use></svg>
-                                    Código
-                                </a>
-                                <a class="flex-row flex-ac" href="#">
+                                <a class="flex-row flex-ac" href="projects/dark-mode/dark-mode.html" target=”_blank”>
                                     <svg><use href="#link-icon"></use></svg>
                                     Demo
                                 </a>
@@ -265,47 +212,39 @@
                 <h2 class="js-animated c-blue text-shadow text-center anm anm-fade-in">Pens</h2>
                 <div class="pens__list flex-row flex-row--wrap flex-jc">
                     <div class="js-animated pens__pen anm anm-grow anm-fade-in">
-                        <p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="XWELPQO" data-user="alissons47" style="height: 320px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                            <span>See the Pen <a href="https://codepen.io/alissons47/pen/XWELPQO">
-                                Profile Card</a> by Alisson Silva (<a href="https://codepen.io/alissons47">@alissons47</a>)
-                                on <a href="https://codepen.io">CodePen</a>.</span>
-                            </p>
-                            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-                    </div>
-                    <div class="js-animated pens__pen anm anm-grow anm-fade-in">
-                        <p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="OJveBOv" data-user="alissons47" style="height: 320px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                            <span>See the Pen <a href="https://codepen.io/alissons47/pen/OJveBOv">
-                                JavaScript Smooth Scroll</a> by Alisson Silva (<a href="https://codepen.io/alissons47">@alissons47</a>)
-                                on <a href="https://codepen.io">CodePen</a>.</span>
-                            </p>
-                            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-                        </div>
-                    <div class="js-animated pens__pen anm anm-grow anm-fade-in">
                         <p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="PoRryye" data-user="alissons47" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                             <span>See the Pen <a href="https://codepen.io/alissons47/pen/PoRryye">
-                            Untitled</a> by Alisson Silva (<a href="https://codepen.io/alissons47">@alissons47</a>)
+                            JavaScript Typing Effect Multiple Lines</a> by Alisson Silva (<a href="https://codepen.io/alissons47">@alissons47</a>)
                             on <a href="https://codepen.io">CodePen</a>.</span>
                         </p>
                         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
                     </div>
                     <div class="js-animated pens__pen anm anm-grow anm-fade-in">
-                        <p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="dymBWLV" data-user="alissons47" style="height: 320px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                            <span>See the Pen <a href="https://codepen.io/alissons47/pen/dymBWLV">
-                                Animated Placeholder</a> by Alisson Silva (<a href="https://codepen.io/alissons47">@alissons47</a>)
-                                on <a href="https://codepen.io">CodePen</a>.</span>
-                            </p>
-                            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-                        </div>
-                        <div class="js-animated pens__pen anm anm-grow anm-fade-in">
-                        <p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="OJveoJV" data-user="alissons47" style="height: 320px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                            <span>See the Pen <a href="https://codepen.io/alissons47/pen/OJveoJV">
-                                Password Toggle</a> by Alisson Silva (<a href="https://codepen.io/alissons47">@alissons47</a>)
-                                on <a href="https://codepen.io">CodePen</a>.</span>
-                            </p>
-                            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-                        </div>
+                        <p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="OJveBOv" data-user="alissons47" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/alissons47/pen/OJveBOv">
+                            JavaScript Smooth Scroll</a> by Alisson Silva (<a href="https://codepen.io/alissons47">@alissons47</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
                     </div>
-                    <div class="js-animated pens__btn flex-row flex-jc anm anm-grow anm-fade-in">
+                    <div class="js-animated pens__pen anm anm-grow anm-fade-in">
+                        <p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="XWELPQO" data-user="alissons47" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/alissons47/pen/XWELPQO">
+                            Profile Card</a> by Alisson Silva (<a href="https://codepen.io/alissons47">@alissons47</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                    <div class="js-animated pens__pen anm anm-grow anm-fade-in">
+                        <p class="codepen" data-height="350" data-default-tab="result" data-slug-hash="dymBWLV" data-user="alissons47" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/alissons47/pen/dymBWLV">
+                            Animated Placeholder</a> by Alisson Silva (<a href="https://codepen.io/alissons47">@alissons47</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </div>
+                <div class="js-animated pens__btn flex-row flex-jc anm anm-grow anm-fade-in">
                     <a href="https://codepen.io/alissons47" target=”_blank”>Ver mais</a>
                 </div>
             </div>

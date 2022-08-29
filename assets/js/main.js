@@ -109,7 +109,6 @@ function preloader(preloaderElement){
  */
 async function setUp(){
     const body = document.querySelector("body");
-    body.classList.add("show-preloader");
     const preloaderElement = document.querySelector(".preloader");
     const title = Array.from(document.querySelectorAll(".js-tittle"));
     title[0].textContent = "";
