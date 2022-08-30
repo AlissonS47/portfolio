@@ -734,12 +734,11 @@ footer span {
     .flex-col.flex-col--row {
         flex-direction: row;
     }
-    .about__container {
-        display: block;
+    .about__img {
+        flex-basis: 70%;
     }
-    .about__img img {
-        margin: 0 2rem 0.85rem 0;
-        float: left;
+    .about__text {
+        flex-basis: 100%;
     }
     .mobile-hidden {
         display: block;
