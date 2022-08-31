@@ -642,6 +642,14 @@ footer span {
 /* ============  Contact Section => End ============ */
 
 /* ============  Animations => Start ============ */
+.click-through {
+    pointer-events: none;
+}
+
+.show-animation.click-through {
+    pointer-events: initial;
+}
+
 .anm-fade-in {
     opacity: 0;
     transition: 1s ease-out;
