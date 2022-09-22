@@ -327,38 +327,38 @@ header {
     fill: var(--red-color);
 }
 
-.hero-header__links * {
-    padding: 0.5em;
-    width: 8rem;
+.hero-header__links a:link,
+.hero-header__links a:visited {
+    text-decoration: none;
+    padding: 0.5em 1em;
     border-radius: 0.25em;
     font-size: var(--fs-400);
     text-align: center;
     font-weight: 700;
+    line-height: var(--fs-400);
     transition: 0.2s;
 }
 
-.hero-header__links a:link,
-.hero-header__links a:visited {
+.hero-header__links a:link:first-child,
+.hero-header__links a:visited:first-child {
     color: var(--text-main-color);
     background-color: var(--blue-color);
-    text-decoration: none;
+    border: 0.15rem solid var(--blue-color);
 }
 
-.hero-header__links a:hover,
-.hero-header__links a:focus {
+.hero-header__links a:hover:first-child,
+.hero-header__links a:focus:first-child {
     background-color: #4ab5ca;
 }
 
-.hero-header__links button {
-    background: none;
+.hero-header__links a:link:last-child,
+.hero-header__links a:visited:last-child {
     border: 0.15rem solid var(--blue-color);
-    cursor: pointer;
-    outline: none;
     color: var(--blue-color);
 }
 
-.hero-header__links button:hover,
-.hero-header__links button:focus {
+.hero-header__links a:hover:last-child,
+.hero-header__links a:focus:last-child {
     background-color: #4ab5ca3f;
 }
 
